@@ -18,7 +18,14 @@ module.exports = {
       },
       zIndex: {
         '100': '100',
-      }
+      },
+      margin: {
+        '-18': '-4.5rem',
+        '54': '13.8rem',
+      },
+      height: {
+        '18': '4.5rem',
+      },
     },
   },
   variants: {
