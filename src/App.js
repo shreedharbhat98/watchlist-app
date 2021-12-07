@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Layout from './components/Layout';
+import Header from './components/Header';
+import AutoComplete from './components/AutoComplete';
+import ListItem from './components/ListItem';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <React.Fragment>
+    <Layout>
+      <Header title="Watch List" />
+      <AutoComplete />
+      {/* <ListItem /> */}
+    </Layout>
+  </React.Fragment>
+
+)
 
 export default App;
