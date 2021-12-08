@@ -34,7 +34,7 @@ const AutoComplete = ({ add, remove, stockWatchlist, selectedStocks }) => {
           </span>
         ) : null}
       </div>
-      <ul className={`absolute top-42 bg-white text-gray-700 w-full md:w-4/6 lg:w-1/3 z-50 border-l-2 border-indigo-600 pr-4 ${suggestions.length && 'max-h-5/6 overflow-scroll'}`}>
+      <ul className={`absolute bg-white text-gray-700 w-full md:w-4/6 lg:w-1/3 z-50 border-l-2 border-indigo-600 pr-4 ${suggestions.length && 'max-h-5/6'}`}>
         {suggestions.length > 0 ? suggestions?.map((suggestedStock, index) => (
           <ListItem
             details={suggestedStock}
